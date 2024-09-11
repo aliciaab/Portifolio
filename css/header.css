@@ -33,8 +33,16 @@ header{
  }
  
  .btn{
-  width: 5vw;
-  height: 6vh;
+  width: 12vw;
+  height: 5.5vh;
+
+  border: nome;
+  border-radius: 50vw;
+  background-color:azure ;
+
+  color: #054570;
+  font-size: 1.2vw;
+
  }
  
  #btns_paginas{
@@ -45,6 +53,7 @@ header{
 
  #logo_profisao h3{
     font-size: 2vw;
+    
  }
  button.btn {
     background-color: transparent;
