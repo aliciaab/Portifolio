@@ -1,0 +1,28 @@
+#img_principal{
+    width: 30vw;
+    height: 30vh;
+    position: absolute;
+    left: 20vw;
+    top: 25vw;
+    z-index: 1;
+}
+
+#infos{
+    width: 30vw;
+
+    position: absolute;
+    left: 55vw;
+    top: 45vh;
+}
+
+#primeiro_nome{
+   font-size: 2vw;
+}
+#segundo_nome{
+    font-size: 2vw;
+}
+#texto_nome{
+    font-size: 1vw;
+
+}
+
