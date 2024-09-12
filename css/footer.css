@@ -7,3 +7,7 @@ footer{
     position: absolute;
     bottom: 0;
 }
+#btn_github{
+    width: 5vw;
+    height: 5vw;
+}
