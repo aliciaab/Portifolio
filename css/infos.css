@@ -1,18 +1,19 @@
 #img_principal{
     width: 30vw;
-    height: 50vh;
+    height: 40vh;
     position: absolute;
     left: 20vw;
-    top: 15vw;
+    top: 20vw;
     z-index: 1;
 }
 
 #infos{
     width: 30vw;
 
-    position: absolute;
+   position: absolute;
     left: 55vw;
     top: 45vh;
+    z-index: 1;
 }
 
 #primeiro_nome{
@@ -26,3 +27,32 @@
 
 }
 
+@media(max-width: 480px) {
+    #img_principal{
+        width: 30vw;
+        height: 40vh;
+        display: flex;
+        left: 20vw;
+        top: 50vw;
+        z-index: 1;
+    }
+    
+    #infos{
+        width: 30vw;
+        display: flex;
+        left: 55vw;
+        top: 45vh;
+        z-index: 1;
+    }
+    
+    #primeiro_nome{
+       font-size: 2vw;
+    }
+    #segundo_nome{
+        font-size: 2vw;
+    }
+    #texto_nome{
+        font-size: 1vw;
+    
+    }
+}

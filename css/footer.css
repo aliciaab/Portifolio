@@ -1,4 +1,4 @@
-footer{
+footer {
     width: 100vw;
 
     display: flex;
@@ -7,7 +7,25 @@ footer{
     position: absolute;
     bottom: 0;
 }
-#btn_github{
+
+#btn_github {
     width: 5vw;
     height: 5vw;
+}
+
+@media(max-width: 480px) {
+    footer {
+        width: 100vw;
+
+        display: flex;
+        justify-content: end;
+
+        position: absolute;
+        bottom: 0;
+    }
+
+    #btn_github {
+        width: 5vw;
+        height: 5vw;
+    }
 }
