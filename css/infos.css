@@ -29,30 +29,32 @@
 
 @media(max-width: 480px) {
     #img_principal{
-        width: 30vw;
-        height: 40vh;
+        width: 40vw;
+        height: 30vh;
         display: flex;
-        left: 20vw;
-        top: 50vw;
+        left: 15vw;
+        top: 65vw;
         z-index: 1;
     }
     
-    #infos{
-        width: 30vw;
+    #infos {
+        width: 40vw;
         display: flex;
-        left: 55vw;
-        top: 45vh;
+        flex-direction: column; /* Adiciona flex-direction */
+        left: 60vw;
+        top: 40vh;
         z-index: 1;
     }
     
-    #primeiro_nome{
-       font-size: 2vw;
+    #primeiro_nome {
+        font-size: 6vw;
     }
-    #segundo_nome{
-        font-size: 2vw;
-    }
-    #texto_nome{
-        font-size: 1vw;
     
+    #segundo_nome {
+        font-size: 6vw;
+    }
+    
+    #texto_nome {
+        font-size: 3vw;
     }
 }
