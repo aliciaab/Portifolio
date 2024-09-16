@@ -1,9 +1,9 @@
 #img_principal{
-    width: 30vw;
-    height: 40vh;
+    width: 7 50vw;
+    height: 70vh;
     position: absolute;
-    left: 20vw;
-    top: 20vw;
+    left: 13vw;
+    top: 12vw;
     z-index: 1;
 }
 
@@ -18,19 +18,22 @@
 
 #primeiro_nome{
    font-size: 2vw;
+   color: #ffffff;
 }
 #segundo_nome{
     font-size: 2vw;
+    color: #ffffff;
 }
 #texto_nome{
     font-size: 1vw;
+    color: #ffffff;
 
 }
 
 @media(max-width: 480px) {
     #img_principal{
-        width: 40vw;
-        height: 30vh;
+        width: 50vw;
+        height: 50vh;
         display: flex;
         left: 15vw;
         top: 65vw;

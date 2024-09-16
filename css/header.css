@@ -8,8 +8,7 @@ header {
    flex-direction: row;
    align-items: center;
    justify-content: space-between;
-   background-color: #0a2c54;
-
+   background-color: #00001C;
 }
 
 #img_logo {
@@ -58,7 +57,8 @@ header div {
 
 
 #logo_profisao h3 {
-   font-size: 2vw;
+   font-size: 1.5vw;
+   color: #ffffff;
 
 }
 
@@ -80,15 +80,18 @@ button.btn {
 }
 
 #btn_home {
-   background-color: #054570;
+   background-color: #10203e;
+   color: #ffffff;
 }
 
 #btn_formacao {
-   background-color: #054570;
+   background-color: #0d2546;
+   color: #ffffff;
 }
 
 #btn_projetos {
-   background-color: #054570;
+   background-color: #10203e;
+   color: #ffffff;
 }
 
 @media(max-width: 480px) {
