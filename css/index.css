@@ -3,10 +3,15 @@
 @import url(./footer.css);
 @import url(./section.css);
 
+@font-face {
+    font-family: 'fontP';
+    src: url(./../assets/fonts/Merriweather.zip);
+}
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: 'fontP';
 
     background-color: #215577;
 }
