@@ -4,18 +4,20 @@
     position: absolute;
     left: 13vw;
     top: 12vw;
-    z-index: 1;
+    z-index: 1; 
+    animation: teste 1s forwards; 
 }
 
 #infos{
     width: 30vw;
-
+    
    position: absolute;
     left: 55vw;
     top: 45vh;
     z-index: 1;
 }
 
+ 
 #primeiro_nome{
    font-size: 2vw;
    color: #ffffff;
