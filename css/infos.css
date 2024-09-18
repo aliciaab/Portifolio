@@ -1,28 +1,24 @@
-/* Container da section para alinhar elementos */
 section {
     display: flex;
-    justify-content: flex-start; /* Alinhar ao início */
-    align-items: flex-start; /* Alinhar ao topo */
-    height: 70vh; /* Altura total da tela */
-    padding: 8vw 13vw 0 13vw; /* Reduzi o padding-top para mover a imagem para cima */
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 70vh;
+    padding: 8vw 13vw 0 13vw;
     box-sizing: border-box;
     position: relative;
 }
 
-/* Estilo para a imagem principal */
 #img_principal img {
     width: 40vw;
     height: 70vh;
     z-index: 1;
     animation: teste 1s forwards;
-    /* Mover imagem ainda mais para cima, se necessário */
-    margin-top: -8vh; /* Ajuste fino adicional para mover ainda mais */
+    margin-top: -8vh;
 }
 
-/* Informações ao lado da imagem */
 #infos {
     width: 30vw;
-    margin-left: auto; /* Afasta o bloco de informações para a direita */
+    margin-left: auto;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -31,7 +27,6 @@ section {
     padding-top: 3vh;
 }
 
-/* Estilos para os textos */
 #primeiro_nome, #segundo_nome {
     font-size: 2vw;
     color: #ffffff;
@@ -42,8 +37,71 @@ section {
     color: #ffffff;
 }
 
+@media (max-width: 480px) {
+    section {
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        height: auto; /* Permite que a altura se ajuste automaticamente */
+        padding: 5vw;
+    }
 
+    /* Estilo para a imagem principal no mobile */
+    #img_principal img {
+        width: 80vw; /* Aumenta a largura proporcional da imagem no mobile */
+        height: auto; /* Ajuste automático da altura */
+        margin-top: 0; /* Remove o ajuste superior para telas pequenas */
+    }
 
-@media(max-width: 480px) {
+    /* Informações ao lado da imagem no mobile */
+    #infos {
+        width: 80vw; /* Ajusta a largura das informações no mobile */
+        margin-left: 0; /* Remove a margem para centralizar o bloco de informações */
+        padding-top: 2vh;
+        text-align: center; /* Centraliza o texto no mobile */
+        align-items: center; /* Centraliza os elementos */
+    }
 
+    /* Estilos para os textos no mobile */
+    #primeiro_nome, #segundo_nome {
+        font-size: 6vw; /* Aumenta o tamanho da fonte para maior legibilidade */
+    }
+
+    #texto_nome {
+        font-size: 4vw; /* Aumenta o tamanho da fonte no mobile */
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    section {
+        flex-direction: row; /* Mantém os elementos lado a lado em tablets */
+        justify-content: space-between; /* Espaçamento uniforme entre a imagem e o texto */
+        align-items: center; /* Centraliza os elementos verticalmente */
+        height: auto;
+        padding: 5vw 8vw; /* Ajusta o padding para telas de tablet */
+    }
+
+    /* Estilo para a imagem principal em tablets */
+    #img_principal img {
+        width: 45vw; /* Aumenta a largura da imagem para tablets */
+        height: auto; /* Mantém a proporção da imagem */
+        margin-top: 0; /* Remove o ajuste superior */
+    }
+
+    /* Informações ao lado da imagem em tablets */
+    #infos {
+        width: 45vw; /* Ajusta a largura das informações */
+        margin-left: 0;
+        padding-top: 2vh;
+        align-items: flex-start; /* Mantém o alinhamento à esquerda */
+        text-align: left; /* Texto alinhado à esquerda */
+    }
+
+    /* Estilos para os textos em tablets */
+    #primeiro_nome, #segundo_nome {
+        font-size: 3vw; /* Aumenta o tamanho da fonte para maior legibilidade */
+    }
+
+    #texto_nome {
+        font-size: 1.5vw; /* Ajusta o tamanho do texto menor */
+    }
 }

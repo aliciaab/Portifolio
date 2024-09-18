@@ -8,31 +8,28 @@
     font-family: 'fontP';
     src: url(./../assets/fonts/Merriweather.zip);
 } */
+/* Estilos gerais */
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family:  #00ff00 "Montserrat";
-
+    font-family: "Montserrat", sans-serif; /* Corrigido para manter o Montserrat como fonte primária */
     background-color: #141A34;
 }
 
 img {
     width: 100%;
-    height: 100%;
+    height: auto; /* Altere para auto para manter a proporção correta */
 }
 
-@media(max-width: 480px){
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
     body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-    
-        background-color: #215577;
+        font-size: 4vw; /* Aumenta o tamanho da fonte para melhor leitura em telas menores */
     }
-    
+
     img {
         width: 100%;
-        height: 100%;
+        height: auto; /* Garante que as imagens mantenham a proporção em dispositivos móveis */
     }
 }

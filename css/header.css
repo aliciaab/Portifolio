@@ -1,21 +1,21 @@
+/* Estilos gerais */
 header {
    width: 100vw;
    height: 15vh;
-
    display: flex;
    align-items: center;
    justify-content: space-between;
    background: rgb(0,0,28);
-background: linear-gradient(90deg, rgba(0,0,28,1) 0%, rgba(20,26,52,1) 14%, rgba(42,146,201,1) 100%);
+   background: linear-gradient(90deg, rgba(0,0,28,1) 10%, rgba(42,146,201,1) 100%);
 }
 
 #logo_profisao {
    display: flex;
    align-items: center;
-   justify-content: flex-start; /* Alinhamento à esquerda */
+   justify-content: flex-start; 
    width: 45vw;
-   padding-left: 2vw; /* Afastar da borda lateral */
-   padding-top: 1vh; /* Afastar da borda superior */
+   padding-left: 2vw; 
+   padding-top: 1vh;
 }
 
 #img_logo {
@@ -33,19 +33,17 @@ background: linear-gradient(90deg, rgba(0,0,28,1) 0%, rgba(20,26,52,1) 14%, rgba
    width: 100%;
    height: 100%;
    object-fit: cover;
-   transition: transform 0.5s ease-in-out; /* Transição suave para a rotação */
+   transition: transform 0.5s ease-in-out;
 }
 
 #img_logo:hover img {
-   transform: rotate(360deg); /* Rotaciona a imagem 360 graus no hover */
+   transform: rotate(360deg);
 }
-
 
 #logo_profisao h3 {
    font-size: 1.5vw;
    color: #ffffff;
 }
-
 
 #btns_paginas {
    width: 45vw;
@@ -62,29 +60,95 @@ background: linear-gradient(90deg, rgba(0,0,28,1) 0%, rgba(20,26,52,1) 14%, rgba
    height: 6vh; 
    color: white;
    font-size: 1.2vw; 
-
-  
    display: flex;
    align-items: center;
    justify-content: space-between;
    text-align: center;
    border-radius: 50px; 
-   transition:all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
    cursor: pointer;
 }
 
-#btn_home {
+#btn_home, #btn_formacao, #btn_projetos {
    background-color: #314B7C;
 }
 
-#btn_formacao {
-   background-color: #314B7C;
+.btn:hover {
+   width: 11vw;
 }
 
-#btn_projetos {
-   background-color: #314B7C;
-}
 
-.btn:hover{
-   width:11vw;
+@media (max-width: 480px) {
+   header {
+      height: 12vh;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1vh 2vw;
+   }
+
+   #logo_profisao {
+      width: 100%;
+      justify-content: center;
+      padding-left: 0;
+   }
+
+   #img_logo {
+      width: 10vw;
+      height: 10vw;
+   }
+
+   #logo_profisao h3 {
+      font-size: 4vw;
+   }
+
+   #btns_paginas {
+      width: 100%;
+      justify-content: space-between;
+      padding-top: 1vh;
+   }
+
+   .btn {
+      width: 30vw;
+      height: 3vh;
+      font-size: 3vw;
+      padding: 1vh;
+   }
+
+   .btn:hover {
+      width: 32vw;
+   }
+}
+@media (max-width: 768px) {
+   section {
+       flex-direction: column; /* Empilha os elementos verticalmente */
+       justify-content: center;
+       align-items: center;
+       height: auto; /* Permite que a altura se ajuste automaticamente */
+       padding: 5vw; /* Reduz o padding para se ajustar à tela */
+   }
+
+   /* Estilo para a imagem principal no mobile */
+   #img_principal img {
+       width: 80vw; /* Aumenta a largura proporcional da imagem no mobile */
+       height: auto; /* Ajuste automático da altura */
+       margin-top: 0; /* Remove o ajuste superior para telas pequenas */
+   }
+
+   /* Informações ao lado da imagem no mobile */
+   #infos {
+       width: 80vw; /* Ajusta a largura das informações no mobile */
+       margin-left: 0; /* Remove a margem para centralizar o bloco de informações */
+       padding-top: 2vh;
+       text-align: center; /* Centraliza o texto no mobile */
+       align-items: center; /* Centraliza os elementos */
+   }
+
+   /* Estilos para os textos no mobile */
+   #primeiro_nome, #segundo_nome {
+       font-size: 6vw; /* Aumenta o tamanho da fonte para maior legibilidade */
+   }
+
+   #texto_nome {
+       font-size: 4vw; /* Aumenta o tamanho da fonte no mobile */
+   }
 }
