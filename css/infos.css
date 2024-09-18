@@ -16,7 +16,7 @@ section {
     z-index: 1;
     animation: teste 1s forwards;
     /* Mover imagem ainda mais para cima, se necessário */
-    margin-top: -2vh; /* Ajuste fino adicional para mover ainda mais */
+    margin-top: -8vh; /* Ajuste fino adicional para mover ainda mais */
 }
 
 /* Informações ao lado da imagem */

@@ -5,7 +5,8 @@ header {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   background-color: #00001C;
+   background: rgb(0,0,28);
+background: linear-gradient(90deg, rgba(0,0,28,1) 0%, rgba(20,26,52,1) 14%, rgba(42,146,201,1) 100%);
 }
 
 #logo_profisao {
@@ -73,15 +74,15 @@ header {
 }
 
 #btn_home {
-   background-color: #10203e;
+   background-color: #314B7C;
 }
 
 #btn_formacao {
-   background-color: #0d2546;
+   background-color: #314B7C;
 }
 
 #btn_projetos {
-   background-color: #10203e;
+   background-color: #314B7C;
 }
 
 .btn:hover{
