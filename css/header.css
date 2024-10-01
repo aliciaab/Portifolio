@@ -1,4 +1,4 @@
-/* Estilos gerais */
+
 header {
    width: 100vw;
    height: 15vh;
@@ -118,37 +118,4 @@ header {
       width: 32vw;
    }
 }
-@media (max-width: 768px) {
-   section {
-       flex-direction: column; /* Empilha os elementos verticalmente */
-       justify-content: center;
-       align-items: center;
-       height: auto; /* Permite que a altura se ajuste automaticamente */
-       padding: 5vw; /* Reduz o padding para se ajustar à tela */
-   }
 
-   /* Estilo para a imagem principal no mobile */
-   #img_principal img {
-       width: 80vw; /* Aumenta a largura proporcional da imagem no mobile */
-       height: auto; /* Ajuste automático da altura */
-       margin-top: 0; /* Remove o ajuste superior para telas pequenas */
-   }
-
-   /* Informações ao lado da imagem no mobile */
-   #infos {
-       width: 80vw; /* Ajusta a largura das informações no mobile */
-       margin-left: 0; /* Remove a margem para centralizar o bloco de informações */
-       padding-top: 2vh;
-       text-align: center; /* Centraliza o texto no mobile */
-       align-items: center; /* Centraliza os elementos */
-   }
-
-   /* Estilos para os textos no mobile */
-   #primeiro_nome, #segundo_nome {
-       font-size: 6vw; /* Aumenta o tamanho da fonte para maior legibilidade */
-   }
-
-   #texto_nome {
-       font-size: 4vw; /* Aumenta o tamanho da fonte no mobile */
-   }
-}

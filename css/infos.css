@@ -42,66 +42,62 @@ section {
         flex-direction: column; 
         justify-content: center;
         align-items: center;
-        height: auto; /* Permite que a altura se ajuste automaticamente */
+        height: auto; 
         padding: 5vw;
     }
 
-    /* Estilo para a imagem principal no mobile */
+
     #img_principal img {
-        width: 80vw; /* Aumenta a largura proporcional da imagem no mobile */
-        height: auto; /* Ajuste automático da altura */
-        margin-top: 0; /* Remove o ajuste superior para telas pequenas */
+        width: 80vw; 
+        height: auto; 
+        margin-top: 0; 
     }
 
-    /* Informações ao lado da imagem no mobile */
     #infos {
-        width: 80vw; /* Ajusta a largura das informações no mobile */
-        margin-left: 0; /* Remove a margem para centralizar o bloco de informações */
+        width: 80vw; 
+        margin-left: 0; 
         padding-top: 2vh;
-        text-align: center; /* Centraliza o texto no mobile */
-        align-items: center; /* Centraliza os elementos */
+        text-align: center; 
+        align-items: center; 
     }
 
-    /* Estilos para os textos no mobile */
     #primeiro_nome, #segundo_nome {
-        font-size: 6vw; /* Aumenta o tamanho da fonte para maior legibilidade */
+        font-size: 6vw; 
     }
 
     #texto_nome {
-        font-size: 4vw; /* Aumenta o tamanho da fonte no mobile */
+        font-size: 4vw; 
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     section {
-        flex-direction: row; /* Mantém os elementos lado a lado em tablets */
-        justify-content: space-between; /* Espaçamento uniforme entre a imagem e o texto */
-        align-items: center; /* Centraliza os elementos verticalmente */
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center; 
+        
         height: auto;
-        padding: 5vw 8vw; /* Ajusta o padding para telas de tablet */
+        padding: 5vw 8vw; 
     }
 
-    /* Estilo para a imagem principal em tablets */
     #img_principal img {
-        width: 45vw; /* Aumenta a largura da imagem para tablets */
-        height: auto; /* Mantém a proporção da imagem */
-        margin-top: 0; /* Remove o ajuste superior */
+        width: 45vw; 
+        height: auto; 
+        margin-top: 0; 
     }
 
-    /* Informações ao lado da imagem em tablets */
     #infos {
-        width: 45vw; /* Ajusta a largura das informações */
+        width: 45vw; 
         margin-left: 0;
         padding-top: 2vh;
-        align-items: flex-start; /* Mantém o alinhamento à esquerda */
-        text-align: left; /* Texto alinhado à esquerda */
+        align-items: flex-start; 
+        text-align: left; 
     }
 
-    /* Estilos para os textos em tablets */
     #primeiro_nome, #segundo_nome {
-        font-size: 3vw; /* Aumenta o tamanho da fonte para maior legibilidade */
+        font-size: 3vw; 
     }
 
     #texto_nome {
-        font-size: 1.5vw; /* Ajusta o tamanho do texto menor */
+        font-size: 1.5vw; 
     }
 }
