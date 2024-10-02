@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #141A34; /* Fundo azul escuro */
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+header {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0,0,28);
+  background: linear-gradient(90deg, rgba(0,0,28,1) 10%, rgba(42,146,201,1) 100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+header h1 {
+  font-size: 2.5vw;
+  margin: 0;
+}
+
+/* Estilização do container de cartões */
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilização dos cartões */
+.card {
+  background-color: #1B2540;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #ffffff;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
