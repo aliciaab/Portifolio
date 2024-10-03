@@ -1,9 +1,11 @@
+/* Estilização geral */
 body {
   font-family: Arial, sans-serif;
   background-color: #141A34; /* Fundo azul escuro */
   margin: 0;
   padding: 0;
   color: #fff;
+  overflow-x: hidden; /* Previne barra de rolagem horizontal */
 }
 
 header {
@@ -26,11 +28,13 @@ header h1 {
 /* Estilização do container de cartões */
 .container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  padding: 20px;
+  grid-template-columns: repeat(5, 1fr); /* 4 cartões por fileira */
+  grid-gap: 2vw; /* Espaçamento entre os cartões */
+  padding: 2vw;
+  width: 100%; /* Usa 100% da largura disponível */
   max-width: 1200px;
   margin: 0 auto;
+  box-sizing: border-box; /* Inclui o padding na largura total */
 }
 
 /* Estilização dos cartões */
@@ -42,8 +46,10 @@ header h1 {
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
   color: #ffffff;
-  font-size: 1.2em;
+  font-size: 1.3em;
   cursor: pointer;
+  width: 100%;
+  height: auto;
 }
 
 .card:hover {
