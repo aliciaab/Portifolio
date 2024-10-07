@@ -1,7 +1,7 @@
-let menu = document.getElementById('menu')
-let barra1 = document.getElementById('barra1')
-let barra2 = document.getElementById('barra2')
-let barra3 = document.getElementById('barra3')
+let menu = document.getElementById('menu');
+let barra1 = document.getElementById('barra1');
+let barra2 = document.getElementById('barra2');
+let barra3 = document.getElementById('barra3');
 
 export function trocarMenu() {
     if (menu.style.left === '0vw') {

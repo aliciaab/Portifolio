@@ -3,3 +3,10 @@
 @import url(./../index.css);
 @import url(./../footer.css);
 @import url(./menu.css);
+
+h1 {
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 2vw;
+    color: white;
+  }
