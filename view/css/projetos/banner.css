@@ -1,46 +1,45 @@
-#banners{
-    width: 400vw;
+#banners {
+    width: 400vw; /* 4 banners, cada um ocupando 100vw */
     height: 35vh;
-    position:absolute;
+    position: absolute;
     left: 0;
     display: flex;
     flex-direction: row;
-    margin-top: 5vh;;
-    transition: all 0.2s  ease-in-out;
-    
+    margin-top: 5vh;
+    transition: left 0.5s ease-in-out; /* Transição suave ao alterar o valor de left */
+    overflow: hidden; /* Garante que nada vaze para fora da área visível */
 }
 
-.banner{
-    width: 90vw;
-    height:35vh;
-    margin: 0 5vw;
+.banner {
+    width: 100vw; /* Cada banner ocupa 100% da largura da tela */
+    height: 35vh;
     background-color: blueviolet;
     border-radius: 2vw;
+    flex-shrink: 0; /* Impede que os banners se encolham */
 }
 
-#btns_banners{
+#btns_banners {
     width: 10vw;
     height: 5vh;
     position: absolute;
-    left:45vw;
-    top:52vh;
-    display:flex;
+    left: 45vw;
+    top: 52vh;
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    }
+}
 
-    .btn_banner {
-        width: 3vh;
-        height: 3vh;
-        border-radius: 50%;
-        border: none;
-    }
+.btn_banner {
+    width: 3vh;
+    height: 3vh;
+    border-radius: 50%;
+    border: none;
+}
 
-    .btn_banner:hover {
-        width: 2vw;
-        height: 3.3vh;
-        transition: all 0.3s ease-in-out;
-        cursor: pointer
-
-    }
+.btn_banner:hover {
+    width: 2vw;
+    height: 3.3vh;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
