@@ -1,5 +1,11 @@
-import { criarCartoes } from "./cartoes.js";
+// front-end/formacao.js
+import { criarCartoes } from './cartoes.js';
 
 document.addEventListener("DOMContentLoaded", () => {
-  criarCartoes(); // Chama a função após o DOM ser carregado
+    fetch('http://localhost:3000/api/cartoes')
+        .then(response => response.json())
+        .then(data => {
+            criarCartoes(data);
+        })
+        .catch(error => console.error('Erro ao buscar os cartões:', error));
 });
