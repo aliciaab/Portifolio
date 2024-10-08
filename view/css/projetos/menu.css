@@ -1,55 +1,54 @@
-#icon_menu {
-    width: 4vh;
-    height: 4vw;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    position:absolute;
-    left: 49vw;
-    top:45vh;
+#div-father {
+    display: flex;
+    flex-wrap: nowrap;
 }
+#icon-menu {
+    width: 1vw;
+    height: 7vh;
+    position: absolute;
+    left: 49vw;
+    top: 40vw;
 
-#icon_menu div {
-    width: 4vw;
-    height: 1.5vh;
-    margin:0.3vw;
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#icon-menu div {
+    width: 5vw;
+    height: 2vh;
+    background-color:aliceblue ;
+
+    border: none;
     border-radius: 5vw;
     transition: all 0.3s ease-in-out;
 }
-
-/* #icon_menu:hover div{
-    transform: rotate(180deg);
-}
-
-#icon_menu:hover #barra1{
+/* #icon-menu:hover #div1 {
+    transform: rotate(45deg);
     position: absolute;
-    transform: rotate(135deg);
-    align-items: center;
-    top: 2vh;
+    top: 3vh;
 }
-
-#icon_menu:hover #barra2{
-    display:none
+#icon-menu:hover #div2{
+    display: none;
 }
+#icon-menu:hover #div3{
+    transform: rotate(-45deg);
+    top: 3vh;
+    position: absolute; 
+}  */
 
-#icon_menu:hover #barra3{
-    position: absolute;
-    transform: rotate(-135deg);
-    align-items: center;
-    top: 2vh;
-} */
+/* daqui para baixo é o menu*/
 
 #menu {
     width: 100vw;
     height: 20vh;
 
     position: absolute;
-    top: 55vh;
-    left: -100vw;
+    top: 10vh;
+    left: 0vw;
+    z-index: -1;
 
-    background-color: aquamarine;
+    background-color: #314B7C;
     transition: all 0.3s ease-in-out;
-
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos</title>
-    <link rel="stylesheet" href="../css/projetos/projetos.css">
+    <link rel="stylesheet" href="./../css/projetos/projetos.css">
     <script type="module" src="../../controller/projetos/projetos.js"></script>
     <script src="https://kit.fontawesome.com/8f497cd43a.js" crossorigin="anonymous"></script>
 </head>
@@ -33,30 +33,35 @@
             </button>
         </div>
     </header>
+    <h1>Projetos</h1>   
 
-    <h3>Projetos</h3>
-    <nav id="banners">
-        <div class="banner" style="background-color: red;"></div>
-        <div class="banner" style="background-color: blue;"></div>
-        <div class="banner" style="background-color: green;"></div>
-        <div class="banner" style="background-color: yellow;"></div>
-    </nav>
+     <div id="div-father">
+        <section>
+            <nav id="banners">
+                <div style="background-color: rgb(255, 145, 0);" class="banner" id="id-banner1"></div>
+                <div style="background-color: rgb(255, 214, 127);" class="banner" id="id-banner2"></div>
+                <div style="background-color: rgb(255, 0, 140);" class="banner" id="id-banner3"></div>
+                <div style="background-color: rgb(255, 127, 176);" class="banner" id="id-banner4"></div>
+            </nav>
+            <nav id="btns-banners">
+                <div class="btn-banner" onclick="trocarBanner(0)"></div>
+                <div class="btn-banner" onclick="trocarBanner(1)"></div>
+                <div class="btn-banner" onclick="trocarBanner(2)"></div>
+                <div class="btn-banner" onclick="trocarBanner(3)"></div>
+            </nav>
+        </section>
+        <section>
+            <nav id="icon-menu" onclick="trocarMenu()">
+                <div id="div1"></div>
+                <div id="div2"></div>
+                <div id="div3"></div>
+            </nav>
+            <nav id="menu">
 
-    <nav id="btns_banners">
-        <button class="btn_banner" onclick="trocarBanner(0)"></button>
-        <button class="btn_banner" onclick="trocarBanner(1)"></button>
-        <button class="btn_banner" onclick="trocarBanner(2)"></button>
-        <button class="btn_banner" onclick="trocarBanner(3)"></button>
-    </nav>
+            </nav>
+        </section>
+    </div>
 
-    <section>
-        <nav id="icon_menu" onclick="trocarMenu()">
-            <div id="barra1"></div>
-            <div id="barra2"></div>
-            <div id="barra3"></div>
-        </nav>
-        <nav id="menu"></nav>
-    </section>
 </body>
 
 </html>

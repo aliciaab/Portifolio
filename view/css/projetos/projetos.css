@@ -1,12 +1,19 @@
 @import url(./../header.css);
 @import url(./banner.css);
-@import url(./../index.css);
-@import url(./../footer.css);
 @import url(./menu.css);
 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #141A34;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden; /*tira a barra de rolagem*/
+}
+
 h1 {
-    font-size: 2vw;
-    text-align: center;
-    margin-top: 2vw;
-    color: white;
-  }
+  font-size: 2vw;
+  text-align: center;
+  margin-top: 2vw;
+  color: white;
+}

@@ -1,26 +1,32 @@
 let menu = document.getElementById('menu');
-let barra1 = document.getElementById('barra1');
-let barra2 = document.getElementById('barra2');
-let barra3 = document.getElementById('barra3');
+let div1 = document.getElementById('div1');
+let div2 = document.getElementById('div2');
+let div3 = document.getElementById('div3');
 
-export function trocarMenu() {
-    if (menu.style.left === '0vw') {
+export function trocarMenu(){
+    if(menu.style.left === '0vw'){
         menu.style.left = '-100vw';
 
-        barra1
-        barra2
-        barra3
+        div1.style.rotate = ('0deg');
+        div1.style.position = ('relative');
+        div1.style.top = ('0vh');
 
-    } else {
-        menu.style.left = '0vw'
+        div2.style.display = ('block');
 
-        barra1.style.position = 'absolute';
-        barra1.style.rotate = '135deg';
-        barra1.style.alignItems = 'center';
-        barra2.style.display = 'none'
-        barra3.style.position ='absolute'
-        barra3.style.rotate = '-135deg';
-        barra3.style.alignItems ='center'
-        barra3.style.top ='2.7vh'
+        div3.style.rotate = ('-0deg');
+        div3.style.top = ('0vh');
+        div3.style.position = ('relative');
+    }else{
+        menu.style.left = '0vw';
+
+        div1.style.rotate = ('45deg');
+        div1.style.position = ('absolute');
+        div1.style.top = ('3vh');
+
+        div2.style.display = ('none');
+
+        div3.style.rotate = ('-45deg');
+        div3.style.top = ('3vh');
+        div3.style.position = ('absolute');
     }
 }
