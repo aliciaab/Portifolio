@@ -1,28 +1,14 @@
-// URL do seu back-end
-const baseUrl = 'http://localhost:3000/cartoes';
+import { buscarCartoes } from "./buscarcartoes.js";
 
-// Função para buscar cartões do back-end
-export async function buscarCartoes() {
-    try {
-        const response = await fetch(baseUrl);
-        if (!response.ok) {
-            throw new Error('Erro ao buscar os cartões');
-        }
-        const cartoes = await response.json();
-        // Após buscar os cartões, eles são passados para criarCartoes
-        criarCartoes(cartoes); 
-    } catch (error) {
-        console.error('Erro:', error);
-    }
-}
 
-// Função para criar cartões
-export function criarCartoes(cartoes) {
+export async function criarCartoes() {
     console.log('Função criarCartoes chamada'); // Mensagem de verificação
 
     // Limpa a seção de cartões antes de adicionar novos
     const sectionCartoes = document.createElement('div');
     sectionCartoes.className = 'container'; // Adiciona a classe 'container'
+
+    const cartoes = await buscarCartoes()
 
     for (let i = 0; i < cartoes.length; i++) {
         let cartao = document.createElement('div');
@@ -48,7 +34,3 @@ export function criarCartoes(cartoes) {
     document.getElementById('main-section').appendChild(sectionCartoes);
 }
 
-// Chama a função quando o DOM estiver completamente carregado
-document.addEventListener('DOMContentLoaded', () => {
-    buscarCartoes();   // Chama a função para buscar cartões do back-end
-});
