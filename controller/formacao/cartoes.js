@@ -9,18 +9,19 @@ export async function buscarCartoes() {
             throw new Error('Erro ao buscar os cartões');
         }
         const cartoes = await response.json();
-        criarCartoes(cartoes); // Passa os cartões para a função que os cria na página
+        // Após buscar os cartões, eles são passados para criarCartoes
+        criarCartoes(cartoes); 
     } catch (error) {
         console.error('Erro:', error);
     }
 }
 
-// Função para criar os cartões na página
+// Função para criar cartões
 export function criarCartoes(cartoes) {
     console.log('Função criarCartoes chamada'); // Mensagem de verificação
 
-    // Cria a div dos cartões
-    let sectionCartoes = document.createElement('div');
+    // Limpa a seção de cartões antes de adicionar novos
+    const sectionCartoes = document.createElement('div');
     sectionCartoes.className = 'container'; // Adiciona a classe 'container'
 
     for (let i = 0; i < cartoes.length; i++) {
@@ -43,5 +44,11 @@ export function criarCartoes(cartoes) {
     }
 
     // Adiciona a div dos cartões à seção principal do HTML
+    document.getElementById('main-section').innerHTML = ''; // Limpa cartões antigos
     document.getElementById('main-section').appendChild(sectionCartoes);
 }
+
+// Chama a função quando o DOM estiver completamente carregado
+document.addEventListener('DOMContentLoaded', () => {
+    buscarCartoes();   // Chama a função para buscar cartões do back-end
+});
