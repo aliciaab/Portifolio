@@ -1,5 +1,5 @@
-import { criarCartoes } from "./cartoes.js";
+import { buscarCartoes } from "./cartoes.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  criarCartoes(); // Chama a função após o DOM ser carregado
+  buscarCartoes(); // Chama a função após o DOM ser carregado
 });

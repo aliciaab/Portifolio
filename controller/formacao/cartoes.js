@@ -1,47 +1,47 @@
-const cartoes = [
-  { nome: 'Produto A', valor: 'R$45,00' },
-  { nome: 'Produto B', valor: 'R$59,99' },
-  { nome: 'Produto C', valor: 'R$30,50' },
-  { nome: 'Produto D', valor: 'R$99,99' },
-  { nome: 'Produto E', valor: 'R$25,00' },
-  { nome: 'Produto F', valor: 'R$150,00' },
-  { nome: 'Produto G', valor: 'R$75,75' },
-  { nome: 'Produto H', valor: 'R$88,88' },
-  { nome: 'Produto I', valor: 'R$120,00' },
-  { nome: 'Produto J', valor: 'R$50,50' },
-  { nome: 'Produto K', valor: 'R$200,00' },
-  { nome: 'Produto L', valor: 'R$65,99' },
-  { nome: 'Produto M', valor: 'R$32,40' },
-  { nome: 'Produto N', valor: 'R$78,60' },
-  { nome: 'Produto O', valor: 'R$33,33' },
-];
+// URL do seu back-end
+const baseUrl = 'http://localhost:3000/cartoes';
 
-export function criarCartoes() {
-  console.log('Função criarCartoes chamada'); // Mensagem de verificação
+// Função para buscar cartões do back-end
+export async function buscarCartoes() {
+    try {
+        const response = await fetch(baseUrl);
+        if (!response.ok) {
+            throw new Error('Erro ao buscar os cartões');
+        }
+        const cartoes = await response.json();
+        criarCartoes(cartoes); // Passa os cartões para a função que os cria na página
+    } catch (error) {
+        console.error('Erro:', error);
+    }
+}
 
-  // Cria a div dos cartões
-  let sectionCartoes = document.createElement('div');
-  sectionCartoes.className = 'container'; // Adiciona a classe 'container'
+// Função para criar os cartões na página
+export function criarCartoes(cartoes) {
+    console.log('Função criarCartoes chamada'); // Mensagem de verificação
 
-  for (let i = 0; i < cartoes.length; i++) {
-    let cartao = document.createElement('div');
-    cartao.className = 'card'; // A classe deve corresponder ao seu CSS
+    // Cria a div dos cartões
+    let sectionCartoes = document.createElement('div');
+    sectionCartoes.className = 'container'; // Adiciona a classe 'container'
 
-    let h1 = document.createElement('h1');
-    h1.textContent = cartoes[i].nome; // Nome do cartão
+    for (let i = 0; i < cartoes.length; i++) {
+        let cartao = document.createElement('div');
+        cartao.className = 'card'; // A classe deve corresponder ao seu CSS
 
-    let h3 = document.createElement('h3');
-    h3.textContent = cartoes[i].valor; // Valor do cartão
+        let h1 = document.createElement('h1');
+        h1.textContent = cartoes[i].nome; // Nome do cartão
 
-    let p = document.createElement('p');
-    p.textContent = 'Sobre...'; // Descrição
+        let h3 = document.createElement('h3');
+        h3.textContent = cartoes[i].valor; // Valor do cartão
 
-    cartao.appendChild(h1);
-    cartao.appendChild(h3);
-    cartao.appendChild(p);
-    sectionCartoes.appendChild(cartao); // Adicionando o cartão à seção
-  }
+        let p = document.createElement('p');
+        p.textContent = 'Sobre...'; // Descrição
 
-  // Adiciona a div dos cartões à seção principal do HTML
-  document.getElementById('main-section').appendChild(sectionCartoes);
+        cartao.appendChild(h1);
+        cartao.appendChild(h3);
+        cartao.appendChild(p);
+        sectionCartoes.appendChild(cartao); // Adicionando o cartão à seção
+    }
+
+    // Adiciona a div dos cartões à seção principal do HTML
+    document.getElementById('main-section').appendChild(sectionCartoes);
 }
