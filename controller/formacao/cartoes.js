@@ -1,66 +1,20 @@
 const cartoes = [
-  {
-    nome: 'nome 1',
-    valor: 'R$88,00',
-  },
-  {
-    nome: 'nome 2',
-    valor: 'R$88,00',
-  },
-  {
-    nome: 'nome 3',
-    valor: 'R$88,00',
-  },
-  {
-    nome: 'nome 4',
-    valor: 'R$88,00',
-  },
-  {
-    nome: 'nome 5',
-    valor: 'R$88,00',
-  },
-  {
-    nome: 'nome 6',
-    valor: 'R$88,00',
-  },
-  {
-    nome: 'nome 7',
-    valor: 'R$88,00',
-  },
-  {
-    nome: 'nome 8',
-    valor: 'R$88,00',
-  },
-  {
-    nome: 'nome 9',
-    valor: 'R$88,00',
-  },
-  {
-    nome: 'nome 10',
-    valor: 'R$88,00',
-  },
-  {
-    nome: 'nome 11',
-    valor: 'R$88,00',
-  },
-  {
-    nome: 'nome 12',
-    valor: 'R$88,00',
-  },
-  {
-    nome: 'nome 13',
-    valor: 'R$88,00',
-  },
-  {
-    nome: 'nome 14',
-    valor: 'R$88,00',
-  },
-  {
-    nome: 'nome 15',
-    valor: 'R$88,00',
-  },
-
-]
+  { nome: 'Produto A', valor: 'R$45,00' },
+  { nome: 'Produto B', valor: 'R$59,99' },
+  { nome: 'Produto C', valor: 'R$30,50' },
+  { nome: 'Produto D', valor: 'R$99,99' },
+  { nome: 'Produto E', valor: 'R$25,00' },
+  { nome: 'Produto F', valor: 'R$150,00' },
+  { nome: 'Produto G', valor: 'R$75,75' },
+  { nome: 'Produto H', valor: 'R$88,88' },
+  { nome: 'Produto I', valor: 'R$120,00' },
+  { nome: 'Produto J', valor: 'R$50,50' },
+  { nome: 'Produto K', valor: 'R$200,00' },
+  { nome: 'Produto L', valor: 'R$65,99' },
+  { nome: 'Produto M', valor: 'R$32,40' },
+  { nome: 'Produto N', valor: 'R$78,60' },
+  { nome: 'Produto O', valor: 'R$33,33' },
+];
 
 export function criarCartoes() {
   console.log('Função criarCartoes chamada'); // Mensagem de verificação
