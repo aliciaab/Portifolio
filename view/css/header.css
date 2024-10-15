@@ -1,15 +1,13 @@
-
 header {
    width: 100vw;
    height: 15vh;
    display: flex;
    align-items: center;
    justify-content: space-between;
-   background: rgb(0,0,28);
    background: linear-gradient(90deg, rgba(0,0,28,1) 10%, rgba(42,146,201,1) 100%);
 }
 
-#logo_profisao {
+#logo-profissao {
    display: flex;
    align-items: center;
    justify-content: flex-start; 
@@ -18,7 +16,7 @@ header {
    padding-top: 1vh;
 }
 
-#img_logo {
+#img-logo {
    width: 6vw;
    height: 6vw;
    margin-right: 1vw;
@@ -29,23 +27,23 @@ header {
    justify-content: center;
 }
 
-#img_logo img {
+#img-logo img {
    width: 100%;
    height: 100%;
    object-fit: cover;
    transition: transform 0.5s ease-in-out;
 }
 
-#img_logo:hover img {
+#img-logo:hover img {
    transform: rotate(360deg);
 }
 
-#logo_profisao h3 {
+#logo-profissao h3 {
    font-size: 1.5vw;
    color: #ffffff;
 }
 
-#btns_paginas {
+#btns-paginas {
    width: 45vw;
    display: flex;
    justify-content: space-evenly;
@@ -69,7 +67,7 @@ header {
    cursor: pointer;
 }
 
-#btn_home, #btn_formacao, #btn_projetos {
+#btn-home, #btn-formacao, #btn-projetos {
    background-color: #314B7C;
 }
 
@@ -77,45 +75,43 @@ header {
    width: 11vw;
 }
 
-
 @media (max-width: 480px) {
    header {
-      height: 12vh;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 1vh 2vw;
+       height: 12vh;
+       flex-direction: column;
+       align-items: flex-start;
+       padding: 1vh 2vw;
    }
 
-   #logo_profisao {
-      width: 100%;
-      justify-content: center;
-      padding-left: 0;
+   #logo-profissao {
+       width: 100%;
+       justify-content: center;
+       padding-left: 0;
    }
 
-   #img_logo {
-      width: 10vw;
-      height: 10vw;
+   #img-logo {
+       width: 10vw;
+       height: 10vw;
    }
 
-   #logo_profisao h3 {
-      font-size: 4vw;
+   #logo-profissao h3 {
+       font-size: 4vw;
    }
 
-   #btns_paginas {
-      width: 100%;
-      justify-content: space-between;
-      padding-top: 1vh;
+   #btns-paginas {
+       width: 100%;
+       justify-content: space-between;
+       padding-top: 1vh;
    }
 
    .btn {
-      width: 30vw;
-      height: 3vh;
-      font-size: 3vw;
-      padding: 1vh;
+       width: 30vw;
+       height: 3vh;
+       font-size: 3vw;
+       padding: 1vh;
    }
 
    .btn:hover {
-      width: 32vw;
+       width: 32vw;
    }
 }
-

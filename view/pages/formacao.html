@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/formacao/formacao.css">
+    <link rel="stylesheet" href="../css/header.css">
     <title>Formação - Portfólio Alícia</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script type="module" src="../../controller/formacao/formacao.js" defer></script>
@@ -11,31 +12,40 @@
 </head>
 <body>
     <header>
-        <div id="logo_profisao">
-            <div id="img_logo">
-                <img src="https://tse3.mm.bing.net/th?id=OIG1.d1w8iDVdlN0AXSAEeLtV&w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn"
-                    alt="">
+        <div id="logo-profissao">
+            <div id="img-logo">
+                <img src="https://tse3.mm.bing.net/th?id=OIG1.d1w8iDVdlN0AXSAEeLtV&w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Logo">
             </div>
             <h3>Aluna de Programação Web</h3>
         </div>
-        <div id="btns_paginas">
-            <button class="btn" id="btn_home" onclick="window.location.href = './index.html'">
+        <div id="btns-paginas">
+            <button class="btn" id="btn-home" onclick="window.location.href = './index.html'">
                 <h6>Home</h6>
                 <i class="fa-solid fa-house"></i>
             </button>
-            <button class="btn" id="btn_formacao" onclick="window.location.href = './formacao.html'">
+            <button class="btn" id="btn-formacao" onclick="window.location.href = './formacao.html'">
                 <h6>Formação</h6>
                 <i class="fa-solid fa-graduation-cap"></i>
             </button>
-            <button class="btn" id="btn_projetos" onclick="window.location.href = './projetos.html'">
+            <button class="btn" id="btn-projetos" onclick="window.location.href = './projetos.html'">
                 <h6>Projetos</h6>
                 <i class="fa-solid fa-file-invoice"></i>
             </button>
-        </div>
+        </div>  
     </header>
     <h1>Formação</h1>
+    <section id="cartoes" class="container"></section> <!-- Adicionado 'class="container"' para o layout flex -->
     <section id="main-section">
-       
+        <div id="tela-cadastro"> <!-- Ajustado o ID -->
+            <div id="inputs-cadastro">
+                <input type="text" id="input-nome" placeholder="Nome">
+                <input type="text" id="input-valor" placeholder="Valor">
+                <div id="buttons-tela-cadastro">
+                    <button onclick="recolherDados()">SALVAR</button>
+                    <button onclick="escondeTelacad()">CANCELAR</button>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>

@@ -1,53 +1,59 @@
-@import url(../header.css);
+@import url(./../header.css); /* Importa o cabeçalho */
+@import url(./telaCadastro.css); /* Ajuste o caminho se necessário */
+
 .container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 cartões por fileira */
-  grid-gap: 2vw; /* Espaçamento entre os cartões */
-  padding: 2vw;
-  width: 100%; /* Usa 100% da largura disponível */
-  max-width: 1200px; /* Define um máximo para o container */
-  margin: 0 auto; /* Centraliza o container na tela */
-  box-sizing: border-box; /* Inclui o padding na largura total */
+  display: flex;
+  flex-wrap: wrap; /* Permite que os cartões quebrem para a linha seguinte */
+  justify-content: center; /* Centraliza os cartões */
+  padding: 1vw;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden; /* Não queremos rolagem horizontal */
 }
 
-/* Adicionando esta regra para centralizar os cartões */
-.container {
-  justify-content: center; /* Centraliza os cartões dentro do grid */
+#cartoes {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 colunas iguais */
+  gap: 1vw; /* Espaço entre os cartões */
 }
 
 /* Estilização geral */
 body {
-  font-family: "Montserrat", sans-serif; 
-  background-color: #141A34; /* Fundo azul escuro */
+  font-family: "Montserrat", sans-serif;
+  background-color: #141A34;
   margin: 0;
   padding: 0;
   color: #fff;
-  overflow-x: hidden; /* Previne barra de rolagem horizontal */
+  overflow-x: hidden;
 }
 
 h1 {
-  font-size: 2vw;
+  font-size: 2.5vw; /* Aumenta o tamanho do título */
   text-align: center;
   margin-top: 2vw;
 }
 
-
 /* Estilização dos cartões */
 .card {
   background-color: #1B2540;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 2vw; /* Aumenta o padding para melhor aparência */
+  border-radius: 10px; /* Arredondamento mais suave */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais forte */
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
   color: #ffffff;
-  font-size: 1.3em;
+  font-size: 1.2em; /* Aumenta o tamanho da fonte */
   cursor: pointer;
-  width: 100%;
-  height: auto;
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05); /* Aumenta levemente o cartão ao passar o mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra mais forte ao hover */
+}
+
+/* Estilização do tela-cadastro */
+#tela-cadastro {
+  display: none; /* Oculta por padrão, ajuste conforme necessário */
 }

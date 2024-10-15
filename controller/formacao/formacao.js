@@ -1,5 +1,10 @@
-import { criarCartoes } from "./cartoes.js";
+import { criarCartoes } from "../../view/js/formacao/cartoes_view.js";
+import { escondeTelacad } from "./telacad.js";
+import { recolherDados } from "./telacad.js";
 
-document.addEventListener("DOMContentLoaded", () => {
-  criarCartoes(); // Chama a função após o DOM ser carregado
+window.escondeTelacad = escondeTelacad;
+window.recolherDados = recolherDados;
+
+document.addEventListener("DOMContentLoaded", function () {
+  criarCartoes();
 });
