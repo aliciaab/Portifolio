@@ -4,11 +4,7 @@ import { cadastrarCartao } from "../../services/formacao/cartoes_services.js";
 let telaCad = document.getElementById("tela-cadastro");
 
 export function escondeTelacad() {
-    if (telaCad) {
-        telaCad.style.left = "-100vw";
-    } else {
-        console.error("Elemento 'tela-cadastro' não encontrado.");
-    }
+    telaCad.style.left = "-100vw";
 }
 
 export function mostraTelacad() {
