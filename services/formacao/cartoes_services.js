@@ -25,7 +25,7 @@ export async function excluirCartoes(index) {
         console.log(e);
     }
 }
-export async function cadastrarCartao(nome, valor, id) {
+export async function cadastrarCartao(nome, valor) {
     try {
         const response = await fetch(`http://localhost:3000/cartoes`, {
             method: 'POST',
