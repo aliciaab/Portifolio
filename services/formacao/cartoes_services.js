@@ -35,7 +35,7 @@ export async function cadastrarCartao(nome, valor) {
             body: JSON.stringify({
                 nome: nome,
                 valor: valor,
-                id: id,
+                
             }),
         });
         criarCartoes();
