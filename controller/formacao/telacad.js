@@ -12,16 +12,12 @@ export function mostraTelacad() {
 }
 
 export function recolherDados() {
-    // Corrija os IDs para "input-nome" e "input-valor"
+    
     let nome = document.getElementById("input-nome");
     let valor = document.getElementById("input-valor");
 
-    if (nome && valor) {
-        cadastrarCartao(nome.value, valor.value);
-        escondeTelacad();
-
-        nome.value = '';
-        valor.value = '';
+    if (nome.valor === '') {
+        alert("nome em branco");
     } else {
         console.error("Campos 'nome' e 'valor' não encontrados.");
     }
