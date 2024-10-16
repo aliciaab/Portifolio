@@ -1,6 +1,8 @@
 import { buscarCartoes } from "../../../services/formacao/cartoes_services.js";
 import { excluirCartoes } from "../../../services/formacao/cartoes_services.js";
-import { mostraTelacad } from "../../../controller/formacao/telacad.js"
+import { mostraTelacad } from "../../../controller/formacao/telacad.js";
+import { mostraTelaAtt } from "../../../controller/formacao/telaatt.js";
+
 
 export async function criarCartoes() {
     let sectionCartoes = document.getElementById('cartoes');
@@ -18,29 +20,40 @@ export async function criarCartoes() {
         let h3 = document.createElement('h3');
         h3.textContent = cartoes[i].valor;
 
+  
+        let div = document.createElement('div');
+        div.style.display = 'flex';
+        div.style.width = '100%';
+        div.style.justifyContent = 'space-evenly'
+
         let button = document.createElement('button');
         button.className = 'button_card';
         button.textContent = 'EXCLUIR';
-        button.addEventListener('click', () => {
-            excluirCartoes(i); // Corrigido para pegar o id correto
+        button.addEventListener('click', ()=>{
+            excluirCartoes(i);
         });
 
-        // Adiciona os elementos criados ao cartão
+        let buttonAtt = document.createElement('button');
+        buttonAtt.className = 'button_card';
+        buttonAtt.textContent = 'ATT';
+        buttonAtt.addEventListener('click', ()=>{
+            mostraTelaAtt(i);
+        });
+
+        div.appendChild(button);
+        div.appendChild(buttonAtt);
+
         cartao.appendChild(h1);
         cartao.appendChild(h3);
-        cartao.appendChild(button);
+        cartao.appendChild(div);
 
-        // Adiciona o cartão à seção
         sectionCartoes.appendChild(cartao);
     }
-
-    // Botão para adicionar novo cartão
     let cartaoAdd = document.createElement('button');
     cartaoAdd.className = 'cartao';
     cartaoAdd.textContent = '+';
-    cartaoAdd.addEventListener('click', () => {
+    cartaoAdd.addEventListener('click', ()=>{
         mostraTelacad();
     });
-
-    sectionCartoes.appendChild(cartaoAdd); // Adiciona o botão de adicionar cartão
+    sectionCartoes.appendChild(cartaoAdd);
 }
