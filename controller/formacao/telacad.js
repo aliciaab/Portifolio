@@ -19,6 +19,11 @@ export function recolherDados() {
     if (nome.valor === '') {
         alert("nome em branco");
     } else {
-        console.error("Campos 'nome' e 'valor' não encontrados.");
+        cadastrarCartao(nome.value, valor.value);
+        escondeTelacad();
+
+        nome.value = '';
+        valor.value = '';
     }
+
 }

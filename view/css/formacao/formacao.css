@@ -53,7 +53,3 @@ h1 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra mais forte ao hover */
 }
 
-/* Estilização do tela-cadastro */
-#tela-cadastro {
-  display: none; /* Oculta por padrão, ajuste conforme necessário */
-}
