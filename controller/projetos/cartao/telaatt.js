@@ -1,4 +1,4 @@
-import { atualizarCartao } from "../../services/cartao/cartoes_services.js";
+import { atualizarCartao } from "./../../../services/cartao/cartoes_services.js";
 
 let id;
 
