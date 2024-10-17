@@ -21,21 +21,7 @@
   gap: 1vw; /* Espaço entre os cartões */
 }
 
-/* Estilização geral */
-body {
-  font-family: "Montserrat", sans-serif;
-  background-color: #141A34;
-  margin: 0;
-  padding: 0;
-  color: #fff;
-  overflow-x: hidden;
-}
 
-h1 {
-  font-size: 2.5vw; /* Aumenta o tamanho do título */
-  text-align: center;
-  margin-top: 2vw;
-}
 
 /* Estilização dos cartões */
 .card {
