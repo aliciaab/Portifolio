@@ -1,4 +1,4 @@
-import { cadastrarCartao } from "../../services/formacao/cartoes_services.js";
+import { cadastrarCartao } from "../../services/cartao/cartoes_services.js";
 
 // Corrija o ID para "tela-cadastro"
 let telaCad = document.getElementById("tela-cadastro");

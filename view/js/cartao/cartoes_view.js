@@ -1,7 +1,7 @@
-import { buscarCartoes } from "../../../services/formacao/cartoes_services.js";
-import { excluirCartoes } from "../../../services/formacao/cartoes_services.js";
-import { mostraTelacad } from "../../../controller/formacao/telacad.js";
-import { mostraTelaAtt } from "../../../controller/formacao/telaatt.js";
+import { buscarCartoes } from "../../../services/cartao/cartoes_services.js";
+import { excluirCartoes } from "../../../services/cartao/cartoes_services.js";
+import { mostraTelacad } from "../../../controller/cartao/telacad.js";
+import { mostraTelaAtt } from "../../../controller/cartao/telaatt.js";
 
 
 export async function criarCartoes() {

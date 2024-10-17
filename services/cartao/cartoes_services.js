@@ -1,4 +1,4 @@
-import { criarCartoes } from "../../view/js/formacao/cartoes_view.js";
+import { criarCartoes } from "../../view/js/cartao/cartoes_view.js";
 
 export async function buscarCartoes() {
     try {
