@@ -16,22 +16,34 @@
     width: 90vw;
     height: 35vh;
     margin: 0 5vw;
-    background-color: #f7d8ba; /* cor pastel de exemplo */
+    color: white;
     border: 0;
     border-radius: 2vw;
 }
+.banner h1{
+    font-size: 3.5vw;
+    text-align: left;
+    margin-left: 1.5vw;
+}
+.banner p{
+    font-size: 1.5vw;
+    margin-left: 1.5vw;
+}
+
 #id-banner1 {
-    background-color: #f7d8ba; /* cor pastel laranja clara */
+    background-color: #e8b98f; /* cor pastel laranja escura */
 }
 #id-banner2 {
-    background-color: #c9e7d6; /* cor pastel verde clara */
+    background-color: #a7d5ba; /* cor pastel verde escura */
 }
 #id-banner3 {
-    background-color: #ffe6e6; /* cor pastel rosa clara */
+    background-color: #ffb3b3; /* cor pastel rosa escura */
 }
 #id-banner4 {
-    background-color: #d9e7f7; /* cor pastel azul clara */
+    background-color: #b3d0f0; /* cor pastel azul escura */
 }
+
+
 #btns-banners {
     width: 10vw;
     height: 5vh;
