@@ -1,5 +1,6 @@
 @import url(./../header.css);
 @import url(./../index.css);
+@import url(./../footer.css);
 
 h1 {
     font-size: 2vw; /* Aumenta o tamanho do título */
