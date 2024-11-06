@@ -4,39 +4,39 @@ footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    position: fixed;
-    bottom: 0;
+    margin-top: auto;
 }
 
+/* Estilos do botão GitHub */
 #btn_github {
     width: 4vw;
     height: 4vw;
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 2vw; 
+    font-size: 2vw;
     transition: transform 0.3s ease;
     margin-right: 2vw;
 }
 
 #btn_github:hover {
-    transform: scale(1.3); 
+    transform: scale(1.3);
 }
 
-
+/* Responsividade */
 @media (max-width: 480px) {
     footer {
-        height: 8vh; 
+        height: 8vh;
     }
 
     #btn_github {
-        width: 8vw; 
-        height: 8vw; 
-        font-size: 6vw; 
-        margin-right: 5vw; 
+        width: 8vw;
+        height: 8vw;
+        font-size: 6vw;
+        margin-right: 5vw;
     }
 
     #btn_github:hover {
-        transform: scale(1.2); 
+        transform: scale(1.2);
     }
 }
