@@ -7,8 +7,7 @@
     <title>Projetos</title>
     <link rel="stylesheet" href="../css/projetos/projetos.css">
     <link rel="stylesheet" href="../css/projetos/cartao/cartao.css">
-    <script type="module" src="../../controller/projetos/projetos.js"></script>
-    <script type="module" src="../../controller/projetos/cartao/cartao.js"></script>
+    <script type="module" src="../../controller/projetos/cartao.js"></script>
     <script src="https://kit.fontawesome.com/8f497cd43a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
@@ -40,48 +39,13 @@
     <h1>Projetos</h1>
 
     <div id="div-father">
-        <section>
-            <nav id="banners">
-                <div class="banner" id="id-banner1">
-                    <h1>Titulo do projeto</h1>
-                    <p>Breve descrição do projeto</p>
-                </div>
-                <div class="banner" id="id-banner2">
-                    <h1>Titulo do projeto</h1>
-                    <p>Breve descrição do projeto</p>
-                </div>
-                <div class="banner" id="id-banner3">
-                    <h1>Titulo do projeto</h1>
-                    <p>Breve descrição do projeto</p>
-                </div>
-                <div class="banner" id="id-banner4">
-                    <h1>Titulo do projeto</h1>
-                    <p>Breve descrição do projeto</p>
-                </div>
-            </nav>
-            <nav id="btns-banners">
-                <div class="btn-banner" onclick="trocarBanner(0)"></div>
-                <div class="btn-banner" onclick="trocarBanner(1)"></div>
-                <div class="btn-banner" onclick="trocarBanner(2)"></div>
-                <div class="btn-banner" onclick="trocarBanner(3)"></div>
-            </nav>
-        </section>
-        <section>
-            <nav id="icon-menu" onclick="trocarMenu()">
-                <div id="div1"></div>
-                <div id="div2"></div>
-                <div id="div3"></div>
-            </nav>
-            <nav id="menu">
 
-            </nav>
-        </section>
 
         <section id="cartoes" class="container"></section>
         <section id="tela-cadastro">
             <div id="inputs-cadastro">
                 <input type="text" id="input-nome" placeholder="Nome">
-                <input type="number" id="input-valor" placeholder="Valor">
+                <input type="texto" id="input-valor" placeholder="Link">
                 <div id="buttons-tela-cadastro">
                     <button onclick="recolherDados()">SALVAR</button>
                     <button onclick="escondeTelacad()">CANCELAR</button>

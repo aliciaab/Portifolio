@@ -1,6 +1,4 @@
 @import url(./../header.css);
-@import url(./banner.css);
-@import url(./menu.css);
 @import url(./../footer.css);
 body {
     margin: 0;

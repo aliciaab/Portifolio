@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./../css/formacao/formacao.css">
     <title>Formação - Portfólio Alícia</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script type="module" src="../../controller/formacao/formacao.js"></script>
     <script src="https://kit.fontawesome.com/8f497cd43a.js" crossorigin="anonymous"></script>
 </head>
 
@@ -36,12 +37,49 @@
     </header>
     <h1>Formação</h1>
 
+    <section>
+        <nav id="banners">
+            <div class="banner" id="id-banner1">
+                <h1>Titulo do projeto</h1>
+                <p>Breve descrição do projeto</p>
+            </div>
+            <div class="banner" id="id-banner2">
+                <h1>Titulo do projeto</h1>
+                <p>Breve descrição do projeto</p>
+            </div>
+            <div class="banner" id="id-banner3">
+                <h1>Titulo do projeto</h1>
+                <p>Breve descrição do projeto</p>
+            </div>
+            <div class="banner" id="id-banner4">
+                <h1>Titulo do projeto</h1>
+                <p>Breve descrição do projeto</p>
+            </div>
+        </nav>
+        <nav id="btns-banners">
+            <div class="btn-banner" onclick="trocarBanner(0)"></div>
+            <div class="btn-banner" onclick="trocarBanner(1)"></div>
+            <div class="btn-banner" onclick="trocarBanner(2)"></div>
+            <div class="btn-banner" onclick="trocarBanner(3)"></div>
+        </nav>
+    </section>
+    <section>
+        <nav id="icon-menu" onclick="trocarMenu()">
+            <div id="div1"></div>
+            <div id="div2"></div>
+            <div id="div3"></div>
+        </nav>
+        <nav id="menu">
+
+        </nav>
+    </section>
+
     <footer>
         <button class="btn" id="btn_github" onclick="window.location.href='https://github.com/aliciaab'">
             <i class="fa-brands fa-github"></i>
         </button>
     </footer>
-    
+
 </body>
 
 </html>

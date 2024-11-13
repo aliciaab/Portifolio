@@ -14,7 +14,6 @@
 }
 
 #cartoes {
-  margin-top: 30vw;
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* 5 colunas iguais */
   gap: 1vw; /* Aumenta o espaço entre os cartões */

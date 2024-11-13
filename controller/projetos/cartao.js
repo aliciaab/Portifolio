@@ -1,4 +1,4 @@
-import { criarCartoes } from "./../../../view/js/cartao/cartoes_view.js";
+import { criarCartoes } from "../../view/js/cartao/cartoes_view.js";
 import { escondeTelacad } from "./telacad.js";
 import { recolherDados } from "./telacad.js";
 import { escodeTelaAtt } from "./telaatt.js";
