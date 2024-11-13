@@ -15,15 +15,17 @@ export function recolherDados() {
     
     let nome = document.getElementById("input-nome");
     let valor = document.getElementById("input-valor");
+    let link = document.getElementById("input-descricao");
 
     if (nome.valor === '') {
         alert("nome em branco");
     } else {
-        cadastrarCartao(nome.value, valor.value);
+        cadastrarCartao(nome.value, link.value, descricao.value);
         escondeTelacad();
 
         nome.value = '';
-        valor.value = '';
+        link.value = '';
+        descricao.value = '';
     }
 
 }

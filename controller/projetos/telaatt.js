@@ -13,13 +13,15 @@ export function mostraTelaAtt(i){
 
 export function recolheDadosAtt(){
        let nome = document.getElementById('nomeAtt'); 
-       let valor = document.getElementById('valorAtt'); 
+       let link = document.getElementById('valorAtt'); 
+       let descricao = document.getElementById('descricaoAtt');
 
-       atualizarCartao(id, nome.value, valor.value);
+       atualizarCartao(id, nome.value, link.value, descricao.value);
        escodeTelaAtt();
 
        console.log(id)
 
        nome.value = '';
-       valor.value = '';
+       link.value = '';
+       descricao.value = '';
 }
