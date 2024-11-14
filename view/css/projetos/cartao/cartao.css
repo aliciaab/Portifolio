@@ -19,17 +19,25 @@
   gap: 1vw; /* Aumenta o espaço entre os cartões */
 }
 
-/* Estilização dos cartões */
-.cartao { /* Mudança de .card para .cartao */
+.cartao {
   background-color: #12172e;
-  padding: 1vw; /* Aumenta o padding para melhor aparência */
-  border-radius: 10px; /* Arredondamento mais suave */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais forte */
+  padding: 1vw;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   color: #ffffff;
-  font-size: 1.2em; /* Aumenta o tamanho da fonte */
+  font-size: 1.2em;
   cursor: pointer;
+
+  width: 15vw; /* Largura em vw */
+  height: auto; /* Ajusta a altura automaticamente */
+  min-height: 20vw; /* Define uma altura mínima para manter o layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  word-wrap: break-word; /* Quebra palavras longas para caber na largura */
+  overflow: hidden; /* Evita que conteúdo extra transborde */
 }
 
 .cartao:hover { /* Mudança de .card:hover para .cartao:hover */

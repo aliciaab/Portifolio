@@ -19,8 +19,8 @@ export async function criarCartoes() {
         let h3 = document.createElement('h3');
         h3.textContent = cartoes[i].link;
         
-        let h2 = document.createElement('h2');
-        h2.textContent = cartoes[i].descricao;
+        let h4 = document.createElement('h4');
+        h4.textContent = cartoes[i].descricao;
 
         let div = document.createElement('div');
         div.style.display = 'flex';
@@ -47,7 +47,7 @@ export async function criarCartoes() {
 
         cartao.appendChild(h1);
         cartao.appendChild(h3);
-        cartao.appendChild(h2); // Adiciona a descrição ao cartão
+        cartao.appendChild(h4); // Adiciona a descrição ao cartão
         cartao.appendChild(div);
 
         sectionCartoes.appendChild(cartao);

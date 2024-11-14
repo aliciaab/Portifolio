@@ -3,10 +3,20 @@
 @import url(./../footer.css);
 @import url(./banner.css);
 @import url(./menu.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif; 
+  background-color: #141A34;
+}
+
 
 h1 {
-    font-size: 2vw; /* Aumenta o tamanho do título */
+    font-size: 2vw;
     text-align: center;
     margin-top: 2vw;
     color: white;
-  }
+}

@@ -14,8 +14,8 @@ export function mostraTelacad() {
 export function recolherDados() {
     
     let nome = document.getElementById("input-nome");
-    let valor = document.getElementById("input-valor");
-    let link = document.getElementById("input-descricao");
+    let link = document.getElementById("input-valor");
+    let descricao= document.getElementById("input-descricao");
 
     if (nome.valor === '') {
         alert("nome em branco");
